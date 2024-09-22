@@ -122,7 +122,7 @@ document.getElementById("donate-dha-btn").addEventListener("click", () => {
     div.innerHTML += `
         <div class="bg-base-200 p-8 rounded-lg">
            <h3 class="text-xl font-bold pb-4">
-             ${dhakaInput}   Taka is Donated for Flood Relief in Feni,Bangladesh
+             ${dhakaInput}  Aid for Injured in the Quota Movement
            </h3>
            <p class="font-medium text-gray-500">
              Date : ${new Date()}
