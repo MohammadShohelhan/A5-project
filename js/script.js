@@ -1,5 +1,6 @@
 const donateButton = document.getElementById("donate-button");
 const historyButton = document.getElementById("history-button");
+
 const donateButtonCon = document.getElementById("donate-button-con");
 const historyButtonCon = document.getElementById("history-button-con");
 
@@ -40,7 +41,9 @@ document.getElementById("donate-noa-btn").addEventListener("click", () => {
     const remainingBlance = userBlance - noakhaliInput;
     const total = noakhaliValue + noakhaliInput;
     userId.innerText = remainingBlance;
+    getId("second-blance").innerText=remainingBlance
     getId("noakhali").innerText = total;
+    
     my_modal_2.showModal();
     document.getElementById("noakhali-input").value = "";
 
@@ -81,6 +84,7 @@ document.getElementById("donate-feni-btn").addEventListener("click", () => {
       const total = feniValue + feniInput;
       userId.innerText = remainingBlance;
       getId("feni").innerText = total;
+      
       my_modal_5.showModal();
       document.getElementById("feni-input").value = "";
 
@@ -140,11 +144,9 @@ document.getElementById("donate-dha-btn").addEventListener("click", () => {
 
 
 
-const blog = document.querySelector("#blog")
-blog.addEventListener("click",()=>{
-   console.log(blog)
-    window.location.href = "newpage.html"
-    blog.classList.add("hidden");
-    console.log(blog)
-  
-})
+ document.getElementById("blog").addEventListener("click",() => {
+  console.log("Navigating to newpage.html"); // Added for debugging
+  window.location.href = "newpage.html";     // Ensure newpage.html is in the correct location
+});
+
+

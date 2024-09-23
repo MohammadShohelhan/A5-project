@@ -25,6 +25,17 @@ function whiteStyle(id){
   id.className='px-12 rounded-md  py-2 bg-white border border-gray-300 shadow-sm font-bold text-lg'
  }
  
+ document.getElementById("home").addEventListener("click",() => {
+
+  window.location.href = "index.html";
+  const userblance =  document.getElementById("userBlance").innerHTML;
+   console.log(userblance)      
+});
+
+
+// console.log(userblance)
+// const secondBlance = document.getElementById("second-blance");
+// secondBlance.innerHTML=userblance
  
 
 
