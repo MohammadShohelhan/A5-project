@@ -15,3 +15,16 @@ function getInnerText(id){
 // function getId(){
 
 // }
+
+// =====================
+function defaultstyle(id){
+ id.className='bg-lime-400 px-12 rounded-md  py-2  border border-gray-300 shadow-sm font-bold text-lg '
+}
+
+function whiteStyle(id){
+  id.className='px-12 rounded-md  py-2 bg-white border border-gray-300 shadow-sm font-bold text-lg'
+ }
+ 
+ 
+
+

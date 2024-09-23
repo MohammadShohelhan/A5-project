@@ -3,19 +3,19 @@ const historyButton = document.getElementById("history-button");
 const donateButtonCon = document.getElementById("donate-button-con");
 const historyButtonCon = document.getElementById("history-button-con");
 
+
+
+
+
 historyButton.addEventListener("click", () => {
-  donateButton.className =
-    "px-12 rounded-md  py-2 bg-white border border-gray-300 shadow-sm font-bold text-lg";
-  historyButton.className =
-    " bg-lime-400 px-12 rounded-md  py-2  border border-gray-300 shadow-sm font-bold text-lg ";
+  defaultstyle(historyButton);
+  whiteStyle(donateButton)  
   historyButtonCon.classList.remove("hidden");
   donateButtonCon.classList.add("hidden");
 });
 donateButton.addEventListener("click", () => {
-  historyButton.className =
-    "px-12 rounded-md  py-2 bg-white border border-gray-300 shadow-sm font-bold text-lg";
-  donateButton.className =
-    " bg-lime-400 px-12 rounded-md  py-2  border border-gray-300 shadow-sm font-bold text-lg ";
+  defaultstyle(donateButton);
+  whiteStyle(historyButton)
   donateButtonCon.classList.remove("hidden");
   historyButtonCon.classList.add("hidden");
 });
@@ -24,11 +24,13 @@ donateButton.addEventListener("click", () => {
 
 
 
-// =================
+// ==========================
 document.getElementById("donate-noa-btn").addEventListener("click", () => {
   const userId = document.getElementById("userBlance");
   const Blance = userId.innerText;
   const userBlance = parseFloat(Blance);
+
+  
   const noakhaliInput = getValue("noakhali-input");
  
   if (noakhaliInput > 0 && noakhaliInput <= userBlance) {
@@ -66,6 +68,7 @@ document.getElementById("donate-feni-btn").addEventListener("click", () => {
   const userId = document.getElementById("userBlance");
   const Blance = userId.innerText;
   const userBlance = parseFloat(Blance);
+  
   const feniInput = getValue("feni-input");
   if (feniInput > 0 && feniInput <= userBlance) {
     const userBlance = getInnerText("userBlance");
@@ -135,15 +138,13 @@ document.getElementById("donate-dha-btn").addEventListener("click", () => {
   }
 });
 
-// const noakhaliValue = getInnerText('noakhali');
-// const noakhaliInput = getValue("noakhali-input");
-// console.table({noakhaliInput,noakhaliValue})
-// const feni = getInnerText('feni');
-// const dhaka = getInnerText('dhaka');
-// console.table({userBlance,noakhali,feni,dhaka});
 
-document.querySelector("#blog").addEventListener("click",()=>{
 
+const blog = document.querySelector("#blog")
+blog.addEventListener("click",()=>{
+   console.log(blog)
     window.location.href = "newpage.html"
+    blog.classList.add("hidden");
+    console.log(blog)
   
 })
