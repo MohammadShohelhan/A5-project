@@ -11,50 +11,32 @@
       type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="max-w-[1440px] m-auto">
-    <header class="min-w-full bg-[#ffffffe3] sticky top-0 z-10 ">
-      <nav
-        class="hidden h-20 bg-slate-100 md:flex justify-between items-center px-8 lg:px-[4%]">
-        <h3 id="blog" class="btn bg-lime-400 px-8 font-bold">Blog</h3>
-        <h3 class="flex items-center space-x-2 lg:space-x-4">
-          <img class="md:w-8 lg:w-10" src="./images/logo.png" alt="logo" /><span
-            class="text-black font-bold text-xl md:text-lg"
-            >Donate Bangladesh</span
-          >
-        </h3>
-        <div class="flex items-center justify-center space-x-2 text-cente">
-          <img class="w-8" src="./images/coin.png" alt="" /><span
-            
-            id="userBlance"
-            class="font-bold text-black text-xl"
-            >5500 </span
-          ><span class="font-bold text-black text-xl">BDT</span>
-        </div>
-      </nav>
-      <nav class="md:hidden flex-col text-center space-y-8 py-8 lg:px-[4%]">
-        <div
-          id="blog"
-          class="btn bg-lime-400 px-8 text-center border-b-2 font-bold">
-          Blog
-        </div>
-        <div class="flex items-center space-x-2 justify-center">
-          <img class="md:w-8 lg:w-12" src="./images/logo.png" alt="logo" /><span
-            class="text-black font-bold text-xl md:text-lg"
-            >Donate Bangladesh</span
-          >
-        </div>
-        <div class="flex items-center justify-center space-x-2 text-cente">
-          <img class="w-8" src="./images/coin.png" alt="" /><span
-            
-            id="userBlance"
-            class="font-bold text-black text-xl"
-            >5500 </span
-          ><span class="font-bold text-black text-xl">BDT</span>
-        </div>
-      </nav>
+  <body class="grid w-11/12 m-auto">
+    <header class="w-11/12  bg-[#ffffffe3] sticky top-0 z-10 m-auto ">
+    
 
+      <!--  text-bold space-x-2 px-10 text-center btn bg-lime-400 md:mt-6 -->
+      <nav class="space-y-6 md:flex md:items-center md:justify-between md:pb-6 px-8 lg:px-[4%] md:bg-[#e9de7654]">
+        <div id="blog" class="flex items-center justify-center">
+        <button class="btn bg-lime-400 px-10 mt-6 border-none font-bold text-lg">Blog</button>
+        </div>
+      
+    
+        <div class="flex-1 flex items-center justify-center space-x-2 text-center">
+          <img class="md:w-8 lg:w-10" src="./images/logo.png" alt="logo" />
+          <span class="text-black font-bold text-xl md:text-xl">Donate Bangladesh</span>
+        </div>
+      
+        <div class="flex items-center justify-center space-x-2 text-center">
+          <img class="w-8" src="./images/coin.png" alt="" />
+          <span id="userBlance" class="font-bold text-black text-xl">5500</span>
+          <span class="font-bold text-black text-xl">BDT</span>
+        </div>
+      </nav>
+      
+    
       <!-- ================donation history  -->
-      <div class="text-center space-x-4 mt-16 pb-8">
+      <div class="flex justify-center items-center text-center space-x-4 mt-16 pb-8 ">
         <button
           id="donate-button"
           class="bg-lime-400 px-12 rounded-md py-2 border border-gray-300 shadow-sm font-bold text-lg">
@@ -68,7 +50,7 @@
       </div>
       <!-- ================donation history  -->
     </header>
-    <main class="p-4">
+    <main class="p-4 md:p-0 w-11/12 m-auto">
       <!-- card -->
       <div id="donate-button-con" class="">
         <div class="flex flex-col gap-6 lg:px-[4%]">
@@ -84,7 +66,7 @@
                 alt="Album" />
             </div>
 
-            <div class="mt-8 space-y-4 lg:space-y-10 lg:w-[50%]">
+            <div class="md:flex md:flex-col md:justify-around mt-8 space-y-4 lg:space-y-10 lg:w-[50%]">
               <button class="btn flex flex-row items-center space-x-2 w-44">
                 <img class="w-8" src="./images/coin.png" alt="" />
                 <span class="font-bold text-black text-xl"
