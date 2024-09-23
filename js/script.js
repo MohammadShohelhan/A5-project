@@ -144,5 +144,6 @@ document.getElementById("donate-dha-btn").addEventListener("click", () => {
 
 document.querySelector("#blog").addEventListener("click",()=>{
 
-  window.location.href="/A5-project/newpage.html"
+    window.location.href = "newpage.html"
+  
 })
