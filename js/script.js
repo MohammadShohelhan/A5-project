@@ -89,7 +89,7 @@ document.getElementById("donate-feni-btn").addEventListener("click", () => {
       div.innerHTML += `
         <div class="bg-base-200 p-8 rounded-lg">
            <h3 class="text-xl font-bold pb-4">
-             ${feniInput}   Taka is Donated for Flood Relief in Feni,Bangladesh
+             ${feniInput} Taka is Donated for Flood Relief in Feni,Bangladesh
            </h3>
            <p class="font-medium text-gray-500">
              Date : ${new Date()}
