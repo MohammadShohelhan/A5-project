@@ -42,29 +42,31 @@
       <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
         <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
         <div class="collapse-content">
-          <p>The DOM (Document Object Model) is a programming interface for web documents. It represents the structure of a document as a tree of objects, where each node corresponds to an element, attribute, or text within an HTML or XML document. This tree-like structure allows each part of the document to be accessed and manipulated programmatically.</p>
+          <p>The DOM (Document Object Model) is a programming interface for web documents. It represents the structure of a document as a tree of objects.This tree-like structure allows each part of the document to be accessed and manipulated programmatically.</p>
         </div>
       </div>
       <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
         <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
         <div class="collapse-content">
-          <p>document.getElementById() is used to select an element by its unique id attribute. For example, document.getElementById('myId') selects the element with the id of "myId".
+          <p>I have many ways to select an element from the DOM:
 
-            document.querySelector() allows you to select the first element that matches a CSS selector. For instance, document.querySelector('.myClass') will select the first element with the class "myClass", while document.querySelector('#myId') will select the element with the id "myId".
-            
-            document.querySelectorAll() selects all elements that match a CSS selector and returns a NodeList, which can be iterated over. For example, document.querySelectorAll('.myClass') selects all elements with the class "myClass".</p>
+            document.getElementsByTagName() is used to select elements by their tag name.
+            document.getElementById() is used to select an element by its unique id attribute.
+            document.querySelector() allows  to select the first element that matches a CSS selector.
+            document.querySelectorAll() selects all elements that match a CSS selector and returns a NodeList.
+            There are more ways to select elements in the DOM.</p>
         </div>
       </div>
       <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
         <div class="collapse-title text-xl font-medium">What is  event delegation in the context og the DOM, and whuy it is useful?</div>
         <div class="collapse-content">
-          <p>Event delegation in the context of the DOM refers to a technique where a single event listener is added to a parent element rather than individual child elements. When an event (like a click) occurs on one of the child elements, the event "bubbles up" (propagates) to the parent, where it is handled. This approach leverages event bubbling in the DOM.</p>
+          <p>Event delegation is a technique where a single event listener is added to a parent element instead of individual child elements. The event then "bubbles up" to the parent, leveraging DOM event propagation for efficient handling.</p>
         </div>
       </div>
       <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
         <div class="collapse-title text-xl font-medium">How do you manipulatale an elements attributes and styles using the DOM?  </div>
         <div class="collapse-content">
-          <p>To manipulate an element's attributes and styles using the DOM in JavaScript, you can utilize several methods and properties. For attributes, the getAttribute() method allows you to retrieve the value of a specific attribute, while the setAttribute() method is used to change or add an attribute to the element. If you need to remove an attribute, the removeAttribute() method will effectively delete it. When it comes to styles, you can directly manipulate inline styles using the style property, which lets you change specific CSS properties, such as element.style.color = 'blue' to change the text color. Additionally, you can set multiple styles at once using the cssText property. For managing classes, the classList property provides methods to add, remove, or toggle classes, making it easy to change the element’s appearance dynamically. Together, these techniques allow for flexible and interactive manipulation of web elements.</p>
+          <p>i can manipulate an element's attributes using getAttribute(), setAttribute(), and removeAttribute(). For styles, i can change CSS directly with element.style. such as element.style.backgroundColor = 'red' .And also i can use classList.add or remove. </p>
         </div>
       </div>
      </div>

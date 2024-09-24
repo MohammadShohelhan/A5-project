@@ -1,6 +1,5 @@
 const donateButton = document.getElementById("donate-button");
 const historyButton = document.getElementById("history-button");
-
 const donateButtonCon = document.getElementById("donate-button-con");
 const historyButtonCon = document.getElementById("history-button-con");
 
@@ -41,9 +40,7 @@ document.getElementById("donate-noa-btn").addEventListener("click", () => {
     const remainingBlance = userBlance - noakhaliInput;
     const total = noakhaliValue + noakhaliInput;
     userId.innerText = remainingBlance;
-    getId("second-blance").innerText=remainingBlance
     getId("noakhali").innerText = total;
-    
     my_modal_2.showModal();
     document.getElementById("noakhali-input").value = "";
 
@@ -84,7 +81,6 @@ document.getElementById("donate-feni-btn").addEventListener("click", () => {
       const total = feniValue + feniInput;
       userId.innerText = remainingBlance;
       getId("feni").innerText = total;
-      
       my_modal_5.showModal();
       document.getElementById("feni-input").value = "";
 
@@ -150,3 +146,7 @@ document.getElementById("donate-dha-btn").addEventListener("click", () => {
 });
 
 
+ document.getElementById("home").addEventListener("click",() => {
+  console.log("Navigating to index.html");   // Added for debugging
+  window.location.href = "index.html";       // Ensure index.html is in the correct location
+});
