@@ -143,11 +143,11 @@ document.getElementById("donate-dha-btn").addEventListener("click", () => {
 });
 
 document.getElementById("blog").addEventListener("click", () => {
-  console.log("Navigating to newpage.html"); // Added for debugging
-  window.location.href = "newpage.html"; // Ensure newpage.html is in the correct location
+  console.log("Navigating to newpage.html"); 
+  window.location.href = "newpage.html";
 });
 
  document.getElementById("home").addEventListener("click",() => {
-  console.log("Navigating to index.html");   // Added for debugging
-  window.location.href = "index.html";       // Ensure index.html is in the correct location
+  console.log("Navigating to index.html");   
+  window.location.href = "index.html";       
 });
